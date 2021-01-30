@@ -3,7 +3,7 @@ import React from 'react'
 import { Route, Switch } from 'react-router-dom'
 import { Layout } from './hoc/Layout/Layout.jsx'
 import { Quiz } from './containers/Quiz/Quiz.jsx'
-import { QuizList } from './containers/QuizList/QuizList.jsx'
+import QuizList from './containers/QuizList/QuizList.jsx'
 import { QuizCreator } from './containers/QuizCreator/QuizCreator.jsx'
 import { Auth } from './containers/Auth/Auth.jsx'
 
