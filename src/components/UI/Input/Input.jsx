@@ -1,7 +1,7 @@
 import React from 'react'
 import classes from './Input.module.css'
 
-const isInvalid = ({ valid, touched, shouldValidate }) => {
+function isInvalid({ valid, touched, shouldValidate }) {
    return !valid && shouldValidate && touched
 }
 
@@ -29,8 +29,6 @@ const Input = props => {
                ? <span>{props.errorMessage || 'Введите верное значение'}</span>
                : null
          }
-
-         <span>{props.errorMessage}</span>
       </div>
    )
 }
